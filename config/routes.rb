@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users, controllers: { registrations: "registrations" }
-	resources :accounts		
+	resource :accounts		
 
   root to: 'activity#mine'
   get 'activity/mine'
