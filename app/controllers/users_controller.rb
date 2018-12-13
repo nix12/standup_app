@@ -1,6 +1,8 @@
 class UsersController < ApplicationController
 	before_action :set_user, only: [:show, :edit, :update, :destroy]
 	before_action :set_users, only: [:index]
+	
+	load_and_authorize_resource find_by: :hash_id
 
   def index
   end

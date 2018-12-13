@@ -1,6 +1,8 @@
 class User < ApplicationRecord
 	include Friendlyable  
 
+	attr_accessor :role
+
 	rolify
 	belongs_to :account, optional: true
 

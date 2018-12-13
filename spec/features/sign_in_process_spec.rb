@@ -7,7 +7,8 @@ RSpec.feature "SignInProcesses", type: :feature do
 			password: password,
 			password_confirmation: password
 		})
-
+		u.add_role :user
+		
 		visit root_path
 
 		within "#new_user" do
