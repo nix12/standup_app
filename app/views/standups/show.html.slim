@@ -1,0 +1,15 @@
+p#notice = notice
+
+p
+  strong User:
+  = @standup.user
+p
+  strong Standup data:
+  = @standup.standup_data
+p
+  strong Hash:
+  = @standup.hash_id
+
+=> link_to 'Edit', edit_standup_path(@standup)
+'|
+=< link_to 'Back', standups_path

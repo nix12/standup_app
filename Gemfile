@@ -49,6 +49,8 @@ gem 'paper_trail'
 gem 'ranked-model'
 
 gem 'bootstrap-sass', '~> 3.3.6'
+gem 'font-awesome-sass', '~> 5.5.0'
+gem 'bootstrap-datepicker-rails'
 
 gem 'friendly_id', '~> 5.1.0'
 
