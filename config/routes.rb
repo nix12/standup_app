@@ -1,7 +1,13 @@
 Rails.application.routes.draw do
-  resources :standups
+  get 'teams/index'
+  get 'teams/new'
+  get 'teams/edit'
+  get 'teams/show'
+  get 'teams/destroy'
   devise_for :users, controllers: { registrations: "registrations" }
-	resource :accounts		
+	resources :accounts
+	resources :standup
+	resources :teams, path: "t"		
 
 	get 'dates/:date', to: 'dates#update', as: 'update_date'
 

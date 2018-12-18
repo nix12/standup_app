@@ -19,6 +19,10 @@ Bundler.require(*Rails.groups)
 
 module StandupApp
   class Application < Rails::Application
+		config.time_zone = "UTC"
+		config.active_record.default_timezone = :utc
+		config.active_record.time_zone_aware_types = [:datetime, :time]
+
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
 

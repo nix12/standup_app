@@ -7,6 +7,8 @@ RSpec.describe Account, type: :model do
 		end
 	end
 
+	it { is_expected.to validate_presence_of(:name) }
+
 	context "valid validations" do
 		it "will not save without a name" do
 			expect(FactoryBot.build(:account, name: nil).save).to be_falsey

@@ -1,5 +1,5 @@
 class Standup < ApplicationRecord
-	inlclude Friendlyable  
+	include Friendlyable  
 
 	belongs_to :user
 
